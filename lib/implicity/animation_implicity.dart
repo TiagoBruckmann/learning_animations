@@ -12,7 +12,6 @@ class _AnimationImplicityState extends State<AnimationImplicity> {
 
   bool _status = true;
 
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -44,7 +43,6 @@ class _AnimationImplicityState extends State<AnimationImplicity> {
           child: const Text("Alterar"),
           onPressed: () {
             setState(() {
-
               _status = !_status;
             });
           },
