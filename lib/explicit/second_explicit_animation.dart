@@ -1,6 +1,9 @@
 // imports nativos do flutter
 import 'package:flutter/material.dart';
 
+// import dos estilos
+import 'package:learning_animations/styles/app_images.dart';
+
 class SecondExplicitAnimation extends StatefulWidget {
   const SecondExplicitAnimation({Key? key}) : super(key: key);
 
@@ -51,7 +54,7 @@ class _SecondExplicitAnimationState extends State<SecondExplicitAnimation> with 
       color: Colors.white,
       child: AnimatedBuilder(
         animation: _animation!,
-        child: Image.asset("assets/logo.png"),
+        child: Image.asset(AppImages.logo),
         builder: ( context, widget ) {
 
           return Transform.rotate(

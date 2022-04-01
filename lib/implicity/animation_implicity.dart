@@ -1,6 +1,9 @@
 // imports nativos do flutter
 import 'package:flutter/material.dart';
 
+// import dos estilos
+import 'package:learning_animations/styles/app_images.dart';
+
 class AnimationImplicity extends StatefulWidget {
   const AnimationImplicity({Key? key}) : super(key: key);
 
@@ -29,7 +32,7 @@ class _AnimationImplicityState extends State<AnimationImplicity> {
           color: ( _status == true )
           ? Colors.white70
           : Colors.purpleAccent,
-          child: Image.asset("assets/logo.png"),
+          child: Image.asset(AppImages.logo),
           duration: const Duration(
             seconds: 1
           ),

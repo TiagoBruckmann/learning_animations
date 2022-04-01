@@ -1,6 +1,9 @@
 // imports nativos do flutter
 import 'package:flutter/material.dart';
 
+// import dos estilos
+import 'package:learning_animations/styles/app_images.dart';
+
 class TweenAnimation extends StatefulWidget {
   const TweenAnimation({Key? key}) : super(key: key);
 
@@ -18,7 +21,7 @@ class _TweenAnimationState extends State<TweenAnimation> {
           begin: Colors.white,
           end: Colors.orange
         ),
-        child: Image.asset("assets/estrelas.jpg"),
+        child: Image.asset(AppImages.stars),
         builder: ( context, Color? cor, widget ) {
 
           return ColorFiltered(
@@ -66,7 +69,7 @@ class _TweenAnimationState extends State<TweenAnimation> {
 
           return Transform.rotate(
             angle: angle,
-            child: Image.asset("assets/logo.png"),
+            child: Image.asset(AppImages.logo),
           );
 
         },

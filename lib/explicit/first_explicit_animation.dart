@@ -1,6 +1,9 @@
 // imports nativos do flutter
 import 'package:flutter/material.dart';
 
+// import dos estilos
+import 'package:learning_animations/styles/app_images.dart';
+
 class FirstExplicitAnimation extends StatefulWidget {
   const FirstExplicitAnimation({Key? key}) : super(key: key);
 
@@ -62,7 +65,7 @@ class _FirstExplicitAnimationState extends State<FirstExplicitAnimation> with Si
               turns: _animationController!,
               alignment: Alignment.center,
               child: Image.asset(
-                "assets/logo.png",
+                AppImages.logo,
               ),
             ),
           ),
